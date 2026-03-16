@@ -674,12 +674,6 @@
 
 <!-- JAVASCRIPT (replaces PyScript) -->
 <script>
-  // ── Testimonials Data ──────────────────────────────────────────────────────
-  const testimonials = [
-    { text: "TalentEdge transformed our hiring process completely. We went from spending weeks on recruitment to filling roles in days. The quality of candidates was outstanding.", name: "Sarah Mitchell", title: "CEO, GrowthLab Studio", initials: "SM" },
-    { text: "Their HR audit saved us from several compliance issues we didn't even know we had. Worth every penny. Highly professional and thorough team.", name: "James Okonkwo", title: "Operations Director, NovaTech", initials: "JO" },
-    { text: "The monthly retainer service feels like having a full HR department without the overhead. They're always available when we need them.", name: "Priya Sharma", title: "Founder, Bloom Wellness Co.", initials: "PS" },
-  ];
 
   // ── Render Testimonials ────────────────────────────────────────────────────
   function renderTestimonials() {
@@ -764,9 +758,9 @@
     const statsObserver = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
-          animateCounter("stat-clients", 120, "+");
-          animateCounter("stat-hires",   340, "+");
-          animateCounter("stat-rate",     94, "%");
+          animateCounter("stat-clients", 0, "+");
+          animateCounter("stat-hires",   0, "+");
+          animateCounter("stat-rate",    0, "%");
           statsObserver.disconnect();
         }
       });
